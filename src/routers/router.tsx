@@ -7,6 +7,7 @@ import { ImagenesPage } from "../pages/ImagenesPage";
 import { RutasAnidadasPage } from "../pages/RutasAnidadasPage";
 import { PerfilPage } from "../pages/PerfilPage";
 import { ConfiguracionPage } from "../pages/ConfiguracionPage";
+import { ApisPage } from "../pages/ApisPage";
 
 export const MyRoutes = () => (
     <BrowserRouter>
@@ -16,6 +17,7 @@ export const MyRoutes = () => (
         <Route path="/login" element={<Login/>}/>
         <Route path="/useeffect" element={<UseEffectPage/>}/>
         <Route path="/imagenes" element={<ImagenesPage/>}/>
+        <Route path="/apispage" element={<ApisPage/>}/>
         <Route path="/rutasanidadas" element={<RutasAnidadasPage/>}>
             <Route index element={<Navigate to={"perfil/10"} replace/>}/>
             <Route path="perfil/:id" element={<PerfilPage/>}/>

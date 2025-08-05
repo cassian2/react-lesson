@@ -8,7 +8,7 @@ export default function CartList() {
     { id: 1, title: "imagenes", description: "Aprenda os conceitos fundamentais do React 19.",to:`/imagenes?src=${urlimage}` },
     { id: 2, title: "use effect", description: "Entenda como criar e utilizar componentes.", to: "/useeffect" },
     { id: 3, title: "rutas anidadas", description: "Entenda como criar e utilizar componentes.", to: "/rutasanidadas" },
-  
+    { id: 2, title: "Apis Page", description: "Entenda como criar e utilizar componentes.", to: "/ApisPage" },
   ];
   return (
     <div className='flex flex-col gap-4'>
