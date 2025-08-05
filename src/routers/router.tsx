@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { Login } from "../pages/Login";
 import { Page404 } from "../pages/Page404";
@@ -11,12 +11,14 @@ import { ConfiguracionPage } from "../pages/ConfiguracionPage";
 export const MyRoutes = () => (
     <BrowserRouter>
     <Routes>
+        
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/useeffect" element={<UseEffectPage/>}/>
         <Route path="/imagenes" element={<ImagenesPage/>}/>
         <Route path="/rutasanidadas" element={<RutasAnidadasPage/>}>
-            <Route path="perfil" element={<PerfilPage/>}/>
+            <Route index element={<Navigate to={"perfil/10"} replace/>}/>
+            <Route path="perfil/:id" element={<PerfilPage/>}/>
             <Route path="configuracion" element={<ConfiguracionPage/>}/>
         </Route>
         <Route path="*" element={<Page404/>}/>

@@ -3,8 +3,9 @@ import { Icon } from "@iconify/react";
 import { Link } from 'react-router-dom';
 
 export default function CartList() {
+  const urlimage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxFvoRX4Y_mAxPaWqaHP5XBrWmjd47UfiM0A&s"
   const temasTeoria = [
-    { id: 1, title: "imagenes", description: "Aprenda os conceitos fundamentais do React 19.",to:"/imagenes" },
+    { id: 1, title: "imagenes", description: "Aprenda os conceitos fundamentais do React 19.",to:`/imagenes?src=${urlimage}` },
     { id: 2, title: "use effect", description: "Entenda como criar e utilizar componentes.", to: "/useeffect" },
     { id: 3, title: "rutas anidadas", description: "Entenda como criar e utilizar componentes.", to: "/rutasanidadas" },
   

@@ -1,7 +1,10 @@
+import { useParams } from "react-router-dom";
+
 export const PerfilPage=() => {
+    const {id}=useParams();
     return (
-        <div className="h-screen bg-amber-30 text-black">
-            <span>PerfilPage</span>
+        <div className="h-screen bg-amber-100 text-black">
+            <span>PerfilPage id usuario{id}</span>
         </div>
     );
 }
